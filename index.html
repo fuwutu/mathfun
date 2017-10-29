@@ -108,37 +108,6 @@
             font-size: 16px
         }
 
-        .meta_original_tag {
-            display: inline-block;
-            vertical-align: middle;
-            padding: 1px .5em;
-            border: 1px solid #9e9e9e;
-            color: #8c8c8c;
-            border-top-left-radius: 20% 50%;
-            -moz-border-radius-topleft: 20% 50%;
-            -webkit-border-top-left-radius: 20% 50%;
-            border-top-right-radius: 20% 50%;
-            -moz-border-radius-topright: 20% 50%;
-            -webkit-border-top-right-radius: 20% 50%;
-            border-bottom-left-radius: 20% 50%;
-            -moz-border-radius-bottomleft: 20% 50%;
-            -webkit-border-bottom-left-radius: 20% 50%;
-            border-bottom-right-radius: 20% 50%;
-            -moz-border-radius-bottomright: 20% 50%;
-            -webkit-border-bottom-right-radius: 20% 50%;
-            font-size: 15px;
-            line-height: 1.1
-        }
-
-        .meta_enterprise_tag img {
-            width: 30px;
-            height: 30px!important;
-            display: block;
-            position: relative;
-            margin-top: -3px;
-            border: 0
-        }
-
         .rich_media_meta_text {
             color: #8c8c8c
         }
@@ -202,13 +171,6 @@
             height: auto!important
         }
 
-        @media screen and (device-aspect-ratio:2/3),
-        screen and (device-aspect-ratio:40/71) {
-            .meta_original_tag {
-                padding-top: 0
-            }
-        }
-
         @media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) {
             .mm_appmsg .rich_media_inner,
             .mm_appmsg .rich_media_meta,
@@ -216,15 +178,6 @@
             .mm_appmsg .rich_media_extra,
             .mm_appmsg .title_tips .tips {
                 font-size: 17px
-            }
-            .mm_appmsg .meta_original_tag {
-                font-size: 15px
-            }
-        }
-
-        @media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) {
-            .mm_appmsg .rich_media_title {
-                font-size: 25px
             }
         }
 
@@ -252,162 +205,6 @@
             .rich_media_inner {
                 background-color: #fff;
                 padding-bottom: 100px
-            }
-        }
-
-        @-webkit-keyframes weuiLoading {
-            0% {
-                -webkit-transform: rotate3d(0, 0, 1, 0deg)
-            }
-            100% {
-                -webkit-transform: rotate3d(0, 0, 1, 360deg)
-            }
-        }
-
-        @keyframes weuiLoading {
-            0% {
-                -webkit-transform: rotate3d(0, 0, 1, 0deg)
-            }
-            100% {
-                -webkit-transform: rotate3d(0, 0, 1, 360deg)
-            }
-        }
-
-        .gif_img_wrp {
-            display: inline-block;
-            font-size: 0;
-            position: relative;
-            font-weight: 400;
-            font-style: normal;
-            text-indent: 0;
-            text-shadow: none 1px 1px rgba(0, 0, 0, 0.5)
-        }
-
-        .gif_img_wrp img {
-            vertical-align: top
-        }
-
-        .gif_img_tips {
-            background: rgba(0, 0, 0, 0.6)!important;
-            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endcolorstr='#99000000');
-            border-top-left-radius: 1.2em 50%;
-            -moz-border-radius-topleft: 1.2em 50%;
-            -webkit-border-top-left-radius: 1.2em 50%;
-            border-top-right-radius: 1.2em 50%;
-            -moz-border-radius-topright: 1.2em 50%;
-            -webkit-border-top-right-radius: 1.2em 50%;
-            border-bottom-left-radius: 1.2em 50%;
-            -moz-border-radius-bottomleft: 1.2em 50%;
-            -webkit-border-bottom-left-radius: 1.2em 50%;
-            border-bottom-right-radius: 1.2em 50%;
-            -moz-border-radius-bottomright: 1.2em 50%;
-            -webkit-border-bottom-right-radius: 1.2em 50%;
-            line-height: 2.3;
-            font-size: 11px;
-            color: #fff;
-            text-align: center;
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            min-width: 65px
-        }
-
-        .gif_img_tips.loading {
-            min-width: 75px
-        }
-
-        .gif_img_tips i {
-            vertical-align: middle;
-            margin: -0.2em .73em 0 -2px
-        }
-
-        .gif_img_play_arrow {
-            display: inline-block;
-            width: 0;
-            height: 0;
-            border-width: 8px;
-            border-style: dashed;
-            border-color: transparent;
-            border-right-width: 0;
-            border-left-color: #fff;
-            border-left-style: solid;
-            border-width: 5px 0 5px 8px
-        }
-
-        .gif_img_loading {
-            width: 14px;
-            height: 14px
-        }
-
-        i.gif_img_loading {
-            margin-left: -4px
-        }
-
-        .gif_bg_tips_wrp {
-            position: relative;
-            height: 0;
-            line-height: 0;
-            margin: 0;
-            padding: 0
-        }
-
-        .gif_bg_tips_wrp .gif_img_tips_group {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 9999
-        }
-
-        .gif_bg_tips_wrp .gif_img_tips_group .gif_img_tips {
-            top: 0;
-            left: 0;
-            bottom: auto
-        }
-
-        .rich_media_global_msg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 1em 35px 1em 15px;
-            z-index: 2;
-            background-color: #c6e0f8;
-            color: #8c8c8c;
-            font-size: 13px
-        }
-
-        .rich_media_global_msg .icon_closed {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            margin-top: -5px;
-            line-height: 300px;
-            overflow: hidden;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            background: transparent url(//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/icon_appmsg_msg_closed_sprite.2x2eb52b.png) no-repeat 0 0;
-            width: 11px;
-            height: 11px;
-            vertical-align: middle;
-            display: inline-block;
-            -webkit-background-size: 100% auto;
-            background-size: 100% auto
-        }
-
-        .rich_media_global_msg .icon_closed:active {
-            background-position: 0 -17px
-        }
-
-        .preview_appmsg .rich_media_title {
-            margin-top: 1.9em
-        }
-
-        @media screen and (min-width:1024px) {
-            .rich_media_global_msg {
-                position: relative;
-                margin: 0 20px
-            }
-            .preview_appmsg .rich_media_title {
-                margin-top: 0
             }
         }
     </style>
